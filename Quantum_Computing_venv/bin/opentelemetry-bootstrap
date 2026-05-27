@@ -1,0 +1,6 @@
+#!/home/msosnova/msosnova/Supelec_2023/Notebooks/notebook_Quantum-computing/Quantum_Computing_venv/bin/python
+import sys
+from opentelemetry.instrumentation.bootstrap import run
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(run())
